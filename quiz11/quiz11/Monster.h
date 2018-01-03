@@ -2,6 +2,9 @@
 #include "Creature.h"
 #include <cstdlib> // for rand() and srand()
 #include <ctime> // for time()
+#include "Player.h"
+
+class Player;
 
 class Monster :public Creature
 {
@@ -34,6 +37,7 @@ public:
 
 	static Monster getRandomMonster();
 	static int getRandomNumber(int min, int max);
+	void attackPlayer(Player & player);
 	
 };
 

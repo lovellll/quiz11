@@ -20,3 +20,10 @@ int Monster::getRandomNumber(int min, int max)
 																				 // evenly distribute the random number across our range
 	return static_cast<int>(rand() * fraction * (max - min + 1) + min);
 }
+
+void Monster::attackPlayer(Player & player)
+{
+	std::cout << "The " << getName() << " hit you for " << getDpa() << " damage.\n";
+	player.reduceHealth(getDpa());
+	std::cout << player.getName() << " now has " << player.getHealth() << " HP left!\n";
+}
