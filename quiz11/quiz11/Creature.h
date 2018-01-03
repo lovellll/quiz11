@@ -24,5 +24,6 @@ public:
 	void reduceHealth(int damage);
 	bool isDead();
 	void addGold(int gold);
+	void addDpa(int dpa);
 
 };

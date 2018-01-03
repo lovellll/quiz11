@@ -40,3 +40,8 @@ void Creature::addGold(int gold)
 {
 	m_gold += gold;
 }
+
+void Creature::addDpa(int dpa)
+{
+	m_dpa += dpa;
+}
