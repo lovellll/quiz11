@@ -1,5 +1,7 @@
 #pragma once
 #include "Creature.h"
+#include <cstdlib> // for rand() and srand()
+#include <ctime> // for time()
 
 class Monster :public Creature
 {
@@ -29,5 +31,9 @@ public:
 		monsterData[type].dpa, monsterData[type].gold)
 	{
 	}
+
+	static Monster getRandomMonster();
+	static int getRandomNumber(int min, int max);
+	
 };
 
